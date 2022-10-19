@@ -36,7 +36,9 @@ def main():
                 date=departure_date,
             )
 
-            matching_flights.append(new_flight)  
+            matching_flights.append(new_flight)
+
+    # Send email about matching flights
 
 
 if __name__ == "__main__":

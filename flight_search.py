@@ -1,8 +1,12 @@
 import requests
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
+from dotenv import load_dotenv
+import os
 
-API_KEY = "65MPkwtrYQKRmCHU_75lyaDUPkUJVn3w"
+load_dotenv()
+
+API_KEY = os.environ.get("API_KEY")
 TOMORROW = (datetime.now() + relativedelta(days= +1)).strftime("%d/%m/%Y")
 SIX_MONTHS = (datetime.now() + relativedelta(months= +6)).strftime("%d/%m/%Y")
 FLY_FROM = "STO"
