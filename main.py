@@ -3,6 +3,7 @@ from flight_search import FlightSearch
 from flight_data import FlightData
 from datetime import datetime
 from pprint import pprint
+import json
 
 def main():
 
@@ -38,8 +39,7 @@ def main():
 
             matching_flights.append(new_flight)
 
-    # Send email about matching flights
-
+    # Send email about matching flights.
 
 if __name__ == "__main__":
     main()
